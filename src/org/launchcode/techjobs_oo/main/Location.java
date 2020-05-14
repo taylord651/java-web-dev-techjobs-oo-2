@@ -1,4 +1,4 @@
-package org.launchcode.techjobs_oo;
+package org.launchcode.techjobs_oo.main;
 
 import java.util.Objects;
 
@@ -12,7 +12,7 @@ public class Location {
         nextId++;
     }
 
-    public Location(int id, String value) {
+    public Location(String value) {
         this();
         this.value = value;
     }

@@ -1,4 +1,4 @@
-package org.launchcode.techjobs_oo;
+package org.launchcode.techjobs_oo.main;
 
 import java.util.Objects;
 
@@ -19,10 +19,7 @@ public class PositionType {
 
     @Override
     public String toString() {
-        return "PositionType{" +
-                "id=" + id +
-                ", value='" + value + '\'' +
-                '}';
+        return value;
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
@@ -33,8 +30,7 @@ public class PositionType {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PositionType that = (PositionType) o;
-        return id == that.id &&
-                Objects.equals(value, that.value);
+        return id == that.id;
     }
 
     @Override
