@@ -17,13 +17,12 @@ public class JobTests {
     private Job five;
 
     @Before
-    public void Job() {
+    public void createJobObjects() {
         one = new Job();
         two = new Job();
         three = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         four = new Job("Programmer Analyst", new Employer("Edward Jones"), new Location("St. Louis"), new PositionType("Apprentice"), new CoreCompetency("Java"));
         five = new Job("Programmer Analyst", new Employer("Edward Jones"), new Location("St. Louis"), new PositionType("Apprentice"), new CoreCompetency("Java"));
-
     }
 
     @Test
@@ -53,5 +52,8 @@ public class JobTests {
         char lastIndex = three.toString().charAt(three.toString().length() - 1);
         assertEquals(zeroIndex, lastIndex);
     }
+
+
+
 
 }
